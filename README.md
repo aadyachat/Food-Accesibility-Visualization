@@ -1,8 +1,12 @@
 # Visualizing Food Accessibility in Massachusetts
 
-Link to Website: https://ds4200-s23-class.github.io/project-preethi-aadya-monisha/
+## [Food Accessibility Website](https://ds4200-s23-class.github.io/project-preethi-aadya-monisha/)
 
-## Resources 
+
+## Poster
+[Food Accessibility Visualization Report.pdf](https://github.com/aadyachat/Food-Accesibility-Visualization/blob/main/Visualizing%20Food%20Accessibility%20Final%20Report.pdf)
+
+### Resources 
 
 * [HTML Page on w3schools](https://www.w3schools.com/html/default.asp). (On the left-hand side of the page there is a menu bar with links to various topics.) 
 
