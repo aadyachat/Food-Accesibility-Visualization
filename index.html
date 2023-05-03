@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset=utf-8/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src='js/d3.v6.1.1/d3.min.js'></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+
+
+    <title>Food Accessibility</title>
+</head>
+
+<body>
+
+    <h1>Visualizing Food Accessibility in Massachusetts</h1>
+
+    <div>
+        <h2>Motivation</h2>
+
+        The concept of food deserts can be defined as a region where
+        residents have limited or virtually no cheap and healthy food
+        options and have a multitude of detrimental effects. These
+        affected communities lack the means to seek out alternatives that
+        are farther away with limited transportation methods or are more
+        expensive.
+       
+        To inform Massachusetts residents of what grocery
+        establishments are accessible and suited for their grocery
+        priorities, we created our visualization tool in light of the
+        prevalence of food deserts in Massachusetts. End users will be
+        able to get a visual representation of the geographical location of
+        food retailers across the state along with ability to hone in on local
+        retailers based on their town. Users will be able to visually
+        perceive clustering of food establishments or noticeably empty
+        areas. This can aid them in finding new establishments or areas to
+        frequent to purchase food. The visualization will also support
+        informing the target end user for better understanding their
+        options by categorizing them by establishment type. They will be
+        able to compare the totals of each establishment type given a
+        specific area. To understand the distribution of food options will
+        empower Massachusetts residents to better advocated for
+        themselves whether they are concerned for their health, budget, or
+        ease of access of the food they need.
+       
+        Users will be able to filter the represented retailers based on
+        town location to get a better understanding of their local options.
+        Within the set filters, consumers will be able to gauge based on a
+        tooltip to gather necessary information to better inform their choice including
+        the store address and establishment type.
+       
+        These tasks are crucial to support as food is daily necessity for every person and
+        improving the process of obtaining it can help fight issues like food-related
+        health issues, financial struggles, or even food insecurity.
+
+    </div>
+
+    <div>
+        <h2>Background</h2>
+        <h3>Data: </h3> 
+        The dataset used is a compilation of food retailers in
+        Massachusetts that is from the Metropolitan Area Planning
+        Council's compilation of food system datasets. The specific
+        dataset used is collected by Tufts University. The original dataset
+        is found at this url <a href="https://datacommon.mapc.org/browser/datasets/416.
+        "> https://datacommon.mapc.org/browser/datasets/416. </a>
+        The dataset originally has 9575 items and 16 attributes.
+        This dataset includes straightforward data regarding the
+        geographical locations of different food retailers along with a
+        basic classification of the retailer type. As a result, there are no
+        evident biases or ethical issues with this dataset or the collection
+        of it.
+
+        During the data exploration process it was discovered that this
+        dataset includes attributes that are not necessary for our visual
+        encoding. For instance, the state column was the same for each
+        entry as each retailer is located in Massachusetts, so the column
+        was rendered useless. Additionally, many columns had ids and
+        codes that did not have any clear meaning or significance to our
+        visual encoding. To clean this dataset, the record type, state, year,
+        source, farmers market id, ebt, and coupons can be removed. The
+        data in this dataset was nominal so explorations did not depict any
+        outliers or other statistical anomalies. Lastly, the dataset had no
+        null values which concluded our data exploration and processing.
+        <h3>Demo Video:</h3>
+        <video width="1500" height="800" controls>
+            <source src="project.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        
+        <h3>Report:</h3>
+        <h3> <a href="https://datacommon.mapc.org/browser/datasets/416">Final Report</a> </h3>
+
+
+
+    </div>
+
+    <hr>
+    <div class = "row">
+
+
+        <div class = 'left-column' id = 'vis1'>
+            <h2>Types of Retailers by Frequency</h2>
+        </div>
+
+       
+        <div class = 'right-column' id = 'vis2'>
+            <h2> Food Retailers Locations</h2>
+
+
+            <div class = 'centered'>
+               
+                <form id ='frm'>
+
+                  <label>Filter By Municipality:</label>
+                  <input list = "muncipals" id="mun">
+                  <datalist id="muncipals"></datalist>
+                </form>
+                 <button type="button" id="submitButton">Submit</button>
+            </div>
+       
+        </div>
+
+    </div>
+ 
+    <hr>
+    <!-- Acknowledgements -->
+    <h2>Acknowledgements</h2>
+    <div>
+        <!-- References -->
+        <ul>
+            <li>
+                <a href="https://datacommon.mapc.org/browser/datasets/416">Food Retailers Dataset</a>
+            </li>
+            <li>
+                <a href="https://d3-graph-gallery.com/graph/interactivity_tooltip.html">Building Tooltips with D3</a>
+            </li>
+            <li>
+                <a href="https://d3-graph-gallery.com/graph/scatter_basic.html">D3 Scatterplot</a>
+            </li>
+            <li>
+                <a href= "https://www.plus2net.com/javascript_tutorial/datalist.php">Datalist Tutorial</a>
+            </li>
+            <li>
+                <a href= https://www.w3schools.com/jsref/jsref_string.asp>JavaScript Strings</a>
+            </li>
+            <li>
+                <a href= https://eric.clst.org/tech/usgeojson/>GeoJSON</a>
+            </li>
+            <li>
+                <a href= https://observablehq.com/@d3/zoom-with-tooltip>Zoom with Tooltip</a>
+            </li>
+            <li>
+                <a href= https://observablehq.com/@d3/d3-group>D3 Grouping</a>
+            </li>
+            <li>
+                <a href= https://stackoverflow.com/questions/46005546/d3-v4-get-current-zoom-scale>StackOverflow Zoom Scaling</a>
+            </li>
+        </ul>
+    </div>
+
+     <script src = "js/main.js"></script>
+     
+</body>
+
+</html>

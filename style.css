@@ -1,0 +1,68 @@
+/* make all the body font arial*/
+body {
+    font-family: Arial;
+}
+
+/* center the headers */
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* general center class */
+.centered{
+    text-align: center;
+}
+
+form { 
+    display: inline-block; 
+}
+
+
+/* create tooltip */
+.tooltip {
+    position: absolute;
+    background-color: grey;
+    border:  solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+
+
+/* set flexbox row */
+.row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    justify-content: space-around;
+  }  
+
+
+/* set flexbox columns to the left with 60% */
+.left-column {
+    display: flex;
+    flex-direction:column;
+    max-width: 100%;
+    max-height: 100%;
+    flex: 30;
+    
+}
+
+
+/* set flexbox columns to the left with 60% */
+.right-column {
+    display: flex;
+    flex-direction:column;
+    max-width: 100%;
+    max-height: 100%;
+    flex: 70;
+
+}
+
+/* set border for points/bar */
+.border {
+    stroke-width: 2px;
+    stroke: purple;
+}
+
