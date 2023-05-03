@@ -7,6 +7,13 @@
 [Food Accessibility Visualization Report.pdf](https://github.com/aadyachat/Food-Accesibility-Visualization/blob/main/Visualizing%20Food%20Accessibility%20Final%20Report.pdf)
 
 ## Video
+<!-- blank line -->
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
+    <source src="https://github.com/aadyachat/Food-Accessibility-Visualization/blob/main/project.mp4" type="video/mp4">
+  </video>
+</figure>
+
 https://github.com/aadyachat/Food-Accessibility-Visualization/blob/main/project.mp4
 
 ### Resources 
