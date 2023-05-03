@@ -7,7 +7,7 @@
 [Food Accessibility Visualization Report.pdf](https://github.com/aadyachat/Food-Accesibility-Visualization/blob/main/Visualizing%20Food%20Accessibility%20Final%20Report.pdf)
 
 ## Video
-https://github.com/aadyachat/Food-Accessibility-Visualization/blob/main/project.mp4
+[Food Accessibility Visualization Video] (https://github.com/aadyachat/Food-Accessibility-Visualization/blob/main/project.mp4)
 
 ### Resources 
 
